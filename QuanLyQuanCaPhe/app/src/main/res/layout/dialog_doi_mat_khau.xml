@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đổi mật khẩu"
+                android:textSize="22dp"
+                android:textColor="@color/bg_color"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Mật khẩu hiện tại"
+                app:startIconDrawable="@drawable/lock_24"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/bg_color"
+                app:startIconTint="@color/bg_color"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                android:id="@+id/tipDMKHTai">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/edDMKHTai"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Mật khẩu mới"
+                app:startIconDrawable="@drawable/lock_24"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/bg_color"
+                app:startIconTint="@color/bg_color"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                android:id="@+id/tipDMKMoi">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/edDMKMoi"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Nhập lại mật khẩu"
+                app:startIconDrawable="@drawable/lock_24"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/bg_color"
+                app:startIconTint="@color/bg_color"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                android:id="@+id/tipDMKNhapLai">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/edDMKNhapLai"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btnHuy"
+                    android:text="HỦY"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    app:strokeColor="@color/bg_color"
+                    android:textColor="@color/bg_color"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btnOk"
+                    android:text="OK"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                    android:padding="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    app:strokeColor="@color/bg_color"
+                    android:textColor="@color/bg_color"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

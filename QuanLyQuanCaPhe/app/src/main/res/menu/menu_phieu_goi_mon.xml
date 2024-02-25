@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Chuyen"
+        android:icon="@drawable/arrow_right_24"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:alphabeticShortcut="r"
+        android:id="@+id/menuPgmChuyen"/>
+    <item android:title="Thêm"
+        android:icon="@drawable/plus_24"
+        app:showAsAction="ifRoom"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="1"
+        android:id="@+id/menuPgmThem"/>
+    <item android:title="Tiếp"
+        android:icon="@drawable/trash_red"
+        app:showAsAction="ifRoom"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="0"
+        android:id="@+id/menuPgmXoa"/>
+
+</menu>

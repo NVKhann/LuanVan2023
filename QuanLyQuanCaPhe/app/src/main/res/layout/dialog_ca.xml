@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vào ca"
+            android:textSize="20dp"
+            android:textColor="@color/bg_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/bg_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Kết nối hiện tại:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/bg_color"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Nha tro nang xanh"
+            android:id="@+id/tvTextView"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/bg_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Kết nối không hợp lệ"
+            android:visibility="gone"
+            android:id="@+id/tvLoi"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnOk"
+                android:text="Xác nhận"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:padding="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                app:strokeColor="@color/bg_color"
+                android:textColor="@color/bg_color"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

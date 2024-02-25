@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/lnItemCa">
+        <TextView
+            android:id="@+id/tvItemCaTen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Ca 1"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/bg_color"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvItemCaGio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_weight="2"
+            android:text="Bắt đầu: 06:30 ~ 10:30"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:text="SL: 0/3"
+            android:textSize="18dp"
+            android:id="@+id/tvItemCaSL"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

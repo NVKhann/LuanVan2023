@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Chỉnh sửa"
+        android:icon="@drawable/menu_dots_vertical_24"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="3"
+        android:id="@+id/menuGoiMon"/>
+    <item android:title="Hủy"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/check_24"
+        android:id="@+id/menuGoiMonCheck"
+        android:visible="false"
+        android:orderInCategory="2"/>
+    <item android:title="Xoa"
+        android:icon="@drawable/cross_24"
+        app:showAsAction="ifRoom"
+        android:id="@+id/menuGoiMonHuy"
+        android:orderInCategory="1"
+        android:visible="false"/>
+
+</menu>

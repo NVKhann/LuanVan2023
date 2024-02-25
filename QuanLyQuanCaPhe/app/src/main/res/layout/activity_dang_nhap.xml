@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_app"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tipDNEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLogo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:outlineAmbientShadowColor="@color/bg_color"
+                android:outlineSpotShadowColor="@color/bg_color"
+                android:textColorHint="@android:color/darker_gray"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="@color/bg_color"
+                app:counterOverflowTextColor="@color/bg_color"
+                app:counterTextColor="@color/bg_color"
+                app:errorTextColor="@color/bg_color"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:hintTextColor="@color/bg_color"
+                app:placeholderTextColor="@color/bg_color"
+                app:prefixTextColor="@color/bg_color"
+                app:startIconDrawable="@drawable/envelope_24"
+                app:startIconTint="@color/bg_color"
+                app:suffixTextColor="@color/bg_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edDNEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:outlineAmbientShadowColor="@color/bg_color"
+                    android:outlineSpotShadowColor="@color/bg_color"
+                    android:shadowColor="@color/bg_color"
+                    android:textColor="@color/bg_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tipDNMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tipDNEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Mật khẩu"
+                android:textColorHint="@android:color/darker_gray"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/bg_color"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:hintTextColor="@color/bg_color"
+                app:startIconDrawable="@drawable/lock_24"
+                app:startIconTint="@color/bg_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edDNMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bg_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tipDNMatKhau"
+                android:text="Quên mật khẩu ?"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                android:layout_marginTop="20dp"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvDNQuenMK"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDNQuenMK"
+                android:id="@+id/btnDangNhap"
+                android:text="Đăng nhập"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                app:backgroundTint="@color/bg_color"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDangNhap"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvDNTaiKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Bạn chưa có tài khoản ?"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvDNDangKi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tvDNTaiKhoan"
+                    android:text="Đăng ký"
+                    android:textColor="@color/bg_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyle"
+                android:progressTint="@color/bg_color"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/progressBar"
+                android:background="@color/white"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:textSize="20dp"
+            android:textColor="@color/bg_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập email hiện tại"
+            android:id="@+id/edEditText"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnHuy"
+                android:text="HỦY"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                app:strokeColor="@color/bg_color"
+                android:textColor="@color/bg_color"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnOk"
+                android:text="OK"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:padding="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14dp"
+                app:strokeColor="@color/bg_color"
+                android:textColor="@color/bg_color"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnNguoiDung"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:id="@+id/ivItemNguoiDung"
+            app:srcCompat="@drawable/user"
+            app:shapeAppearanceOverlay="@style/circular"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Đang tải ..."
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tvItemTen"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Đang tải ..."
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tvItemEmail"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:text="Đang tải ..."
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:drawableEnd="@drawable/angle_right_24"
+            android:id="@+id/tvItemDTL"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

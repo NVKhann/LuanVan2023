@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "64955600405",
+    "firebase_url": "https://quanlyquanan0609-default-rtdb.firebaseio.com",
+    "project_id": "quanlyquanan0609",
+    "storage_bucket": "quanlyquanan0609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64955600405:android:83b1785805a11975d1c81c",
+        "android_client_info": {
+          "package_name": "com.example.quanlyquanan0609"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64955600405-fhv3o91p3g3i5pv5l71vh5ct7qtbuin0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNuxSF4D-RVul8qx28_1ohjnvVNCqXQC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64955600405-fhv3o91p3g3i5pv5l71vh5ct7qtbuin0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

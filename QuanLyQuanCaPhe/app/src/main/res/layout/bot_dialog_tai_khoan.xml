@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/bg_color"
+            android:id="@+id/bdTkThongTin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đổi mật khẩu"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/bg_color"
+            android:id="@+id/bdTkMatKhau"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đổi email"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/bg_color"
+            android:id="@+id/bdTkEmail"/>
+    </LinearLayout>
+</RelativeLayout>

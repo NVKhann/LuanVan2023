@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán bằng tiền mặt"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/bg_color"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/dollar"
+            android:id="@+id/sdTTTienMat"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán qua ZaloPay"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#008FE5"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/logo_zalo_30"
+            android:id="@+id/sdTTZalo"/>
+    </LinearLayout>
+</RelativeLayout>

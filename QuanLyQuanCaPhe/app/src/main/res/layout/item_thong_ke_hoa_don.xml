@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/lnItemTKHD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemTKHDMaHd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã HD"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvItemTKHDTenKhach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên khách hàng"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tvItemTKHDNgay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ngày giờ"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemTKHDTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="100000 VND"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/bg_color"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:id="@+id/tvItemTKHDTrangThai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Đã thanh toán"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:id="@+id/tvItemTKHDKhuVuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Khu vực"
+                android:textSize="16dp"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+"
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

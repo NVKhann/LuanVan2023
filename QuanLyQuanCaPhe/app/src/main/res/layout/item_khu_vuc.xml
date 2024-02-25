@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/lnItemKv">
+
+            <TextView
+                android:id="@+id/tvItemKvTen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Khu vực A"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:textColor="@color/bg_color"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvItemKvSoLuong"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="2"
+                android:text="Số lượng: 1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:visibility="invisible"/>
+
+           <Switch
+               android:id="@+id/swItemKv"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:paddingTop="25dp"
+               android:paddingBottom="25dp"/>
+
+           <ImageView
+               android:id="@+id/ivItemKvSua"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:paddingTop="25dp"
+               android:paddingBottom="25dp"
+               android:paddingLeft="10dp"
+               android:src="@drawable/pencil_24"
+               android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
